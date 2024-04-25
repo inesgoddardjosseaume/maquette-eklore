@@ -10,12 +10,13 @@
 </head>
 <body>
     <!-- Nav & header -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="nav">
         <div class="container-fluid">
             <img src="./img/logo.png" alt="logo" class="logo">
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-center">
@@ -43,7 +44,6 @@
                 </div>
             </div>
 
-            <!-- Burger always shown -->
             <button class="navbar-toggler d-lg-block d-xl-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,6 +53,7 @@
     <!-- Page content -->
     <div class="container-fluid text-left">
         <div class="row color-blue_bg align-center">
+            <span class="circle circle_yellow" id="circle"></span>
           
           <!-- Left column -->
           <div class="col-xl-5">
@@ -142,9 +143,8 @@
             </div>
           </div>
 
-                
         </div>
-
+        <span class="circle circle_red"></span>
       </div>
     <!-- Bouton pour ouvrir la popup -->
     <img id="openChatbotBtn" src="./img/chatbot_icon.png" alt="icon chatbot"/>

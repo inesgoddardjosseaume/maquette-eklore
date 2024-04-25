@@ -1,25 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Sélectionnez le bouton pour ouvrir la popup
-    var openChatbotBtn = document.getElementById('openChatbotBtn');
-
-    // Sélectionnez la popup du chatbot
-    var chatbotPopup = document.getElementById('chatbotPopup');
-
-    // Sélectionnez le bouton pour fermer la popup
-    var closeChatbotBtn = document.getElementById('closeChatbotBtn');
-
-    // Ajoutez un écouteur d'événements au bouton pour ouvrir la popup
-    openChatbotBtn.addEventListener('click', function() {
-        chatbotPopup.style.display = 'block'; // Affiche la popup
-    });
-
-    // Ajoutez un écouteur d'événements au bouton pour fermer la popup
-    closeChatbotBtn.addEventListener('click', function() {
-        chatbotPopup.style.display = 'none'; // Cache la popup
-    });
-});
-
-/* Scrolling cards */
 /* Scrolling cards */
 const boxes = document.getElementsByClassName('box');
 
@@ -61,3 +39,31 @@ Array.from(boxes).forEach(box => {
     box.scrollTop = scrollTop - walkY;
   });
 });
+
+/* Circle animation */
+const circle = document.querySelector('.circle');
+
+let direction = 1; // 1 pour descendre, -1 pour montera
+let positionY = 0; // Position Y initiale
+
+// Fonction pour animer le mouvement du cercle
+function moveCircle() {
+    // Changer la direction lorsque le cercle atteint les bords supérieur ou inférieur
+    if (positionY >= window.innerHeight - circle.offsetHeight) {
+        direction = -1;
+    } else if (positionY <= 0) {
+        direction = 1;
+    }
+
+    // Mettre à jour la position Y du cercle
+    positionY += direction;
+
+    // Appliquer la nouvelle position Y
+    circle.style.marginTop = positionY + 'px';
+
+    // Répéter l'animation à la prochaine frame
+    requestAnimationFrame(moveCircle);
+}
+
+// Lancer l'animation
+moveCircle();
