@@ -1,7 +1,29 @@
+/* Animated popup */
+document.addEventListener('DOMContentLoaded', function() {
+    // Select button to open popup
+    const openChatbotBtn = document.getElementById('openChatbotBtn');
+
+    // Select chatbot popup
+    const chatbotPopup = document.getElementById('chatbotPopup');
+
+    // Select button to close popup
+    const closeChatbotBtn = document.getElementById('closeChatbotBtn');
+
+    // Add a listener event for the button to open popup
+    openChatbotBtn.addEventListener('click', function() {
+        chatbotPopup.style.display = 'block'; // Affiche la popup
+    });
+
+    // Add a listener event for the button to close popup
+    closeChatbotBtn.addEventListener('click', function() {
+        chatbotPopup.style.display = 'none'; // Hide popup
+    });
+});
+
 /* Scrolling cards */
 const boxes = document.getElementsByClassName('box');
 
-// Itérer sur chaque élément de la collection
+// Iteration on each element of the cards array
 Array.from(boxes).forEach(box => {
   let isDown = false;
   let startX;
@@ -43,27 +65,24 @@ Array.from(boxes).forEach(box => {
 /* Circle animation */
 const circle = document.querySelector('.circle');
 
-let direction = 1; // 1 pour descendre, -1 pour montera
-let positionY = 0; // Position Y initiale
+let direction = 1; // 1 to down, -1 to up
+let positionY = 0; // Position Y initial
 
-// Fonction pour animer le mouvement du cercle
 function moveCircle() {
-    // Changer la direction lorsque le cercle atteint les bords supérieur ou inférieur
+    // Change direction when circle is close borders
     if (positionY >= window.innerHeight - circle.offsetHeight) {
         direction = -1;
     } else if (positionY <= 0) {
         direction = 1;
     }
 
-    // Mettre à jour la position Y du cercle
+    // Update position Y
     positionY += direction;
 
-    // Appliquer la nouvelle position Y
+    // Update new position
     circle.style.marginTop = positionY + 'px';
 
-    // Répéter l'animation à la prochaine frame
+    // Repete animation
     requestAnimationFrame(moveCircle);
 }
-
-// Lancer l'animation
 moveCircle();

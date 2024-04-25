@@ -1,173 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Éklore</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="./style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Nav & header -->
-    <nav class="navbar navbar-expand-lg" id="nav">
-        <div class="container-fluid">
-            <img src="./img/logo.png" alt="logo" class="logo">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Éklore</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="./style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Nav & header -->
+        <nav class="navbar navbar-expand-lg" id="nav">
+            <div class="container-fluid">
+                <img src="./img/logo.png" alt="logo" class="logo">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-center">
+                            <li class="nav-item">
+                                <a class="nav-link color-blue" aria-current="page" href="#">Qui sommes-nous ?</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle color-blue" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos formations</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item color-blue" href="#">Lorem ipsum</a></li>
+                                    <li><a class="dropdown-item color-blue" href="#">Lorem ipsum</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-blue" href="#">Entreprises</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-blue" href="#">International</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-blue" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-secondary" type="submit">Postulez</button>
+                    </div>
+                </div>
 
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-center">
-                        <li class="nav-item">
-                            <a class="nav-link color-blue" aria-current="page" href="#">Qui sommes-nous ?</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle color-blue" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nos formations</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item color-blue" href="#">Lorem ipsum</a></li>
-                                <li><a class="dropdown-item color-blue" href="#">Lorem ipsum</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-blue" href="#">Entreprises</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-blue" href="#">International</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-blue" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <button class="btn btn-outline-secondary" type="submit">Postulez</button>
-                </div>
+                <button class="navbar-toggler d-lg-block d-xl-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>      
+        </nav>
+        
+        <!-- Page content -->
+        <div class="container-fluid text-left">
+            <div class="row color-blue_bg align-center">
+                <span class="circle circle_yellow" id="circle"></span>
+            
+            <!-- Left column -->
+            <div class="col-xl-5">
+                <h1><span class="color-yellow">Bienvenue dans la Grande École</span> <span class="color-white">qui concilie formation et passion !</span></h1>
+                <p class="color-white">Sur nos 5 campus à taille humaine, nous accompagnons chaque élève à la réalisation de ses projets de vie grâce à un apprentissage de qualité et des expériences étudiantes pleines de vitalité.</p>
+                    <button class="btn btn-bd-primary" type="button">Je découvre les formations</button>
             </div>
 
-            <button class="navbar-toggler d-lg-block d-xl-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>      
-    </nav>
-    
-    <!-- Page content -->
-    <div class="container-fluid text-left">
-        <div class="row color-blue_bg align-center">
-            <span class="circle circle_yellow" id="circle"></span>
-          
-          <!-- Left column -->
-          <div class="col-xl-5">
-            <h1><span class="color-yellow">Bienvenue dans la Grande École</span> <span class="color-white">qui concilie formation et passion !</span></h1>
-            <p class="color-white">Sur nos 5 campus à taille humaine, nous accompagnons chaque élève à la réalisation de ses projets de vie grâce à un apprentissage de qualité et des expériences étudiantes pleines de vitalité.</p>
-                <button class="btn btn-bd-primary" type="button">Je découvre les formations</button>
-          </div>
-
-          <!-- First right column -->
-          <div class="col box">
-            <div class="card card_open-door" style="width: 18rem;">
-                <img src="./img/people-with-ball.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Campus Nantes</h5>
-                  <h6 class="card-title">Soirées Portes Ouvertes :</h6>
-                    <span class="card-text">Samedi 10 février</span><br/>
-                    <span class="card-text">Samedi 06 avril</span><br/>
-                    <a class="link_white" href="#"><i class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="card card_open-door" style="width: 18rem;">
-                <img src="./img/people-with-ball.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Campus Nantes</h5>
-                  <h6 class="card-title">Soirées Portes Ouvertes :</h6>
-                    <span class="card-text">Samedi 10 février</span><br/>
-                    <span class="card-text">Samedi 06 avril</span><br/>
-                    <a class="link_white" href="#"><i class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="card card_open-door" style="width: 18rem;">
-                <img src="./img/people-with-ball.png" class="card-img-top" alt="...">
-                <div class="card-body">
+            <!-- First right column -->
+            <div class="col box">
+                <div class="card card_open-door" style="width: 18rem;">
+                    <img src="./img/people-with-ball.png" class="card-img-top" alt="...">
+                    <div class="card-body">
                     <h5 class="card-title">Campus Nantes</h5>
                     <h6 class="card-title">Soirées Portes Ouvertes :</h6>
-                    <span class="card-text">Samedi 10 février</span><br/>
-                    <span class="card-text">Samedi 06 avril</span><br/>
-                    <a class="link_white" href="#"><i class="bi bi-arrow-right"></i></a>
+                        <span class="card-text">Samedi 10 février</span><br/>
+                        <span class="card-text">Samedi 06 avril</span><br/>
+                        <a class="link_white" href="#"><i class="bi bi-arrow-right"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card card_open-door" style="width: 18rem;">
-                <img src="./img/happy-man.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Campus Saint-Denis</h5>
+                <div class="card card_open-door" style="width: 18rem;">
+                    <img src="./img/people-with-ball.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Campus Nantes</h5>
                     <h6 class="card-title">Soirées Portes Ouvertes :</h6>
-                    <span class="card-text">Mercredi 07 février</span><br/>
-                    <span class="card-text">Samedi 09 mars</span><br/>
-                    <a class="link_white" href="#"><i class="bi bi-arrow-right"></i></a>
+                        <span class="card-text">Samedi 10 février</span><br/>
+                        <span class="card-text">Samedi 06 avril</span><br/>
+                        <a class="link_white" href="#"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card card_open-door" style="width: 18rem;">
+                    <img src="./img/people-with-ball.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Campus Nantes</h5>
+                        <h6 class="card-title">Soirées Portes Ouvertes :</h6>
+                        <span class="card-text">Samedi 10 février</span><br/>
+                        <span class="card-text">Samedi 06 avril</span><br/>
+                        <a class="link_white" href="#"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card card_open-door" style="width: 18rem;">
+                    <img src="./img/happy-man.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Campus Saint-Denis</h5>
+                        <h6 class="card-title">Soirées Portes Ouvertes :</h6>
+                        <span class="card-text">Mercredi 07 février</span><br/>
+                        <span class="card-text">Samedi 09 mars</span><br/>
+                        <a class="link_white" href="#"><i class="bi bi-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
-          </div>
 
-          <!-- Second right column -->
-          <div class="col box">
-            <div class="card card_event" style="width: 18rem;">
+            <!-- Second right column -->
+            <div class="col box">
+                <div class="card card_event" style="width: 18rem;">
+                    <img src="./img/man-on-bike.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Titre de la news ou de lévénement à partager</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a class="link_blue" href="#"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card card_event" style="width: 18rem;">
+                    <img src="./img/man-on-bike.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Titre de la news ou de lévénement à partager</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a class="link_blue" href="#"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card card_event" style="width: 18rem;">
                 <img src="./img/man-on-bike.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Titre de la news ou de lévénement à partager</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a class="link_blue" href="#"><i class="bi bi-arrow-right"></i></a>
+                    <h5 class="card-title">JPO / Salons /Conférences / Webinaires</h5>
+                    <h6>Soirées Portes Ouvertes :</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a class="link_blue" href="#"><i class="bi bi-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card card_event" style="width: 18rem;">
-                <img src="./img/man-on-bike.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card card_event" style="width: 18rem;">
+                <img src="./img/man-and-woman.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Titre de la news ou de lévénement à partager</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a class="link_blue" href="#"><i class="bi bi-arrow-right"></i></a>
+                    <h5 class="card-title">Titre de la news ou de lévénement à partager</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a class="link_blue" href="#"><i class="bi bi-arrow-right"></i></a>
+                </div>
                 </div>
             </div>
-            <div class="card card_event" style="width: 18rem;">
-            <img src="./img/man-on-bike.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">JPO / Salons /Conférences / Webinaires</h5>
-                <h6>Soirées Portes Ouvertes :</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a class="link_blue" href="#"><i class="bi bi-arrow-right"></i></a>
-            </div>
-            </div>
-            <div class="card card_event" style="width: 18rem;">
-            <img src="./img/man-and-woman.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Titre de la news ou de lévénement à partager</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a class="link_blue" href="#"><i class="bi bi-arrow-right"></i></a>
-            </div>
-            </div>
-          </div>
 
+            </div>
+            <span class="circle circle_red"></span>
         </div>
-        <span class="circle circle_red"></span>
-      </div>
-    <!-- Bouton pour ouvrir la popup -->
-    <img id="openChatbotBtn" src="./img/chatbot_icon.png" alt="icon chatbot"/>
 
-    <!-- Popup du chatbot -->
-    <div id="chatbotPopup" class="chatbot-popup">
-        <div class="chatbot-popup-content">
-            <span class="close" id="closeChatbotBtn">&times;</span>
-            <h2>Bienvenue sur notre chatbot</h2>
-            <p>Écrivez ici votre requête...</p>
-        </div>
-    </div>
+        <!-- Button to open popup -->
+        <img id="openChatbotBtn" src="./img/chatbot_icon.png" alt="icon chatbot"/>
 
-    <footer class="text-center">
-        <div class="row">
-            <div class="col-md-6">©Eklore - 2024</div>
-            <div class="col-md-6">
-                <a class="color-white" href="#">Politique de confidentialité</a>
+        <!-- Chatbot -->
+        <div id="chatbotPopup" class="chatbot-popup">
+            <div class="chatbot-popup-content">
+                <span class="close" id="closeChatbotBtn">&times;</span>
+                <h2>Bienvenue sur notre chatbot</h2>
+                <p>Écrivez ici votre requête...</p>
             </div>
         </div>
-    </footer>
 
-    <script src="./script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+        <footer class="text-center">
+            <div class="row">
+                <div class="col-md-6">©Eklore - 2024</div>
+                <div class="col-md-6">
+                    <a class="color-white" href="#">Politique de confidentialité</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>
