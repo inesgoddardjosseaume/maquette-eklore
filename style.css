@@ -90,6 +90,9 @@ $theme-colors: (
     justify-content: center;
     flex-direction: column;
   }
+  .navbar-expand-lg .offcanvas .offcanvas-body {
+    align-items: center;
+  }
 }
 
   .nav-link, p, .btn {
